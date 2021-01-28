@@ -39,6 +39,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -125,7 +132,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .navigation__list {
     display: flex;
   }
@@ -194,6 +201,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .address__list {
+    flex-direction: row;
+  }
+}
+
 .address__list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -201,6 +214,24 @@ img {
 @media screen and (min-width: 481px) {
   .address__list-item:not(:last-child) {
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .address__list-item:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address__list-item:not(:first-child) {
+    margin-top: 0;
   }
 }
 
@@ -367,6 +398,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .about__list-header {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .about__list-item {
     margin-top: 15px;
     margin-left: 15px;
@@ -450,6 +487,12 @@ img {
     flex-wrap: wrap;
     padding-top: 30px;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    padding-top: 50px;
   }
 }
 

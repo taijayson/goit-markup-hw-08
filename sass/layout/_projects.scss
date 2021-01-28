@@ -1,6 +1,10 @@
 /* ========== PROJECTS ========== */
 .projects {
   padding-top: 66px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+  }
 }
 
 .projects__list {

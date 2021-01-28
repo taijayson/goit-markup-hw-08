@@ -7,6 +7,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__list {
+    padding-top: 50px;
+  }
+}
+
 .team {
   background-color: #f5f4fa;
 }
