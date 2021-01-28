@@ -1,0 +1,188 @@
+/* ========== BACKDROP ========== */
+.hero__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--hero-color);
+  padding: 40px;
+}
+
+.hero__modalbtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--hero-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.hero__modalbtn-svg {
+  width: 11px;
+  height: 11px;
+  fill: var(--headers-color);
+
+  .hero__modalbtn:hover &,
+  .hero__modalbtn:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hero__modal-area {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.hero__modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--headers-color);
+}
+
+.hero__modal-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--text-color);
+}
+
+.hero__modal-wrapper {
+  position: relative;
+}
+
+.hero__modal-input {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding-left: 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.hero__modal-svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .hero__modal-input:hover + &,
+  .hero__modal-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.hero__modal-comment {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  resize: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.hero__modal-checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  margin-bottom: 30px;
+}
+
+.hero__modal-input-check {
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid var(--headers-color);
+  margin-right: 7px;
+}
+
+.hero__modal-check-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.hero__modal-conditions {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.hero__modal-check-svg {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  .hero__modal-check-label:checked & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* ========== END BACKDROP ========== */

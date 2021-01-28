@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+
+  .header & {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer & {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    & .navigation {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    .header & {
+      display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+    }
+
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+//   .header & {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   .about & {
+//     display: flex;
+//   }
+
+//   .footer & {
+//     display: flex;
+//     padding: 60px 0px;
+//     align-items: baseline;
+//   }
+
+//   .projects & {
+//     display: flex;
+//     justify-content: center;
+//   }
+
+//   .team & {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
