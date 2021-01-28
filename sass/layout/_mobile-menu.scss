@@ -40,12 +40,8 @@
   right: 25px;
   display: flex;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: var(--hero-color);
+  border: none;
 }
 
 .address__list-mobile {

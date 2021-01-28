@@ -366,12 +366,8 @@ img {
   right: 25px;
   display: flex;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: var(--hero-color);
+  border: none;
 }
 
 .address__list-mobile {
@@ -612,6 +608,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__address-wrapper {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -685,6 +682,12 @@ img {
 @media screen and (min-width: 768px) {
   .footer__social {
     margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    text-align: start;
   }
 }
 
@@ -763,6 +766,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
     margin-top: 0;
+    text-align: start;
   }
 }
 

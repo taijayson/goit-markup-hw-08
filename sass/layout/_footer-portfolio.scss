@@ -25,6 +25,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -95,6 +96,10 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 93px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
   }
 }
 
@@ -171,6 +176,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-top: 0;
+    text-align: start;
   }
 }
 /* ========== END FOOTER ========== */
