@@ -422,6 +422,11 @@ img {
   padding-right: 10px;
 }
 
+.social__list-item .social__list-mobile-link {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
 /* ========== PROJECTS ========== */
 .projects {
   padding-top: 66px;
