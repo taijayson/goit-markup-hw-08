@@ -374,6 +374,10 @@ img {
   background-color: var(--hero-color);
 }
 
+.address__list-mobile {
+  margin-top: 302px;
+}
+
 .navigation__list-mobile .navigation__list-item:not(:last-child) {
   margin-bottom: 35px;
 }
